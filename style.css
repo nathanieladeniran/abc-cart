@@ -1,0 +1,75 @@
+body
+{
+   // padding-top: 0%;
+}
+#shoplist
+{
+    margin-top: 5%;
+    
+}
+.qtytxt
+{
+    width: 50px;
+    color: midnightblue;
+    font-weight: bold;
+}
+.cardsect
+{
+    padding: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color:beige;
+    border-radius: 5px;
+    border: solid 1px; #f1f1f1;
+    
+}
+.wrapper {
+  position: relative;
+  display: inline-block;
+  border: none;
+  font-size: 14px;
+  margin: 50px auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.wrapper input {
+  border: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  opacity: 0;
+}
+
+.wrapper label {
+  position: relative;
+  float: right;
+  color: #C8C8C8;
+}
+
+.wrapper label:before {
+  margin: 5px;
+  content: "\f005";
+  font-family: FontAwesome;
+  display: inline-block;
+  font-size: 1.5em;
+  color: #ccc;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.wrapper input:checked ~ label:before {
+  color: #FFC107;
+}
+
+.wrapper label:hover ~ label:before {
+  color: #ffdb70;
+}
+
+.wrapper label:hover:before {
+  color: #FFC107;
+}
